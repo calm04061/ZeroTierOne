@@ -81,7 +81,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           file: ext/installfiles/linux/zerotier-containerized/Dockerfile
-          platforms: linux/arm/v7
+          platforms: linux/arm/v7,linux/amd64
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
